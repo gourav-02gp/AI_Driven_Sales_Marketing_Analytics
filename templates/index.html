@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Prediction</title>
+</head>
+<body>
+    <h2>AI Sales Prediction</h2>
+
+    <form method="POST">
+        <input type="number" name="spend" placeholder="Enter Marketing Spend" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Predicted Sales: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
